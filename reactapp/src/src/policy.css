@@ -1,0 +1,28 @@
+.policy{
+    font-size: 16px;
+    font-style: Monospace;
+}
+    .mine {
+       
+        margin-left: 1000px;
+        color: #000;
+        padding: 20px 25px;
+        border:#333333;
+        border-radius: 5px;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        
+      }
+  .good
+  {
+    margin-left: 30px;
+        color: #000;
+        padding: 5px 5px;
+        border:#333333;
+        border-radius: 5px;
+        font-size: 50px;
+        font-weight: bold;
+        cursor: pointer;
+        
+  }
