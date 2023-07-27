@@ -14,8 +14,8 @@ function logins() {
     <a href="#" class="logo">SafeWheels</a>
     <nav class="nav-items">
       <Link to="/login"><a className='shy'>Login</a></Link>
-      <Link to="/about"><a >About</a></Link>
-      <a href="#" className='shy'>Contact-<b>1800 2666</b></a> 
+      <Link to="/about"><a >Contact</a></Link>
+      <a href="#" className='shy'><b>1800 2666</b></a> 
     </nav>
   </header>
   <main>

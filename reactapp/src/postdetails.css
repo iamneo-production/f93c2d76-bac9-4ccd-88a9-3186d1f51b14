@@ -1,0 +1,13 @@
+.postform{
+    
+}
+.man{
+    width:500px;
+    height: 500px;
+
+    transform: translateY(20%);
+    margin-left: 400px;
+    background-color:rgb(233, 231, 231);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+}

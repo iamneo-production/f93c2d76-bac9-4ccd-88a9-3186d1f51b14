@@ -51,11 +51,19 @@ cursor: pointer;
 }
 
 .searchbar,
-.message,
 .logosec {
 display: flex;
 align-items: center;
 justify-content: center;
+
+}
+.message{
+	display: flex;
+align-items: center;
+justify-content: center;
+padding-left: 740px;
+
+
 }
 
 .searchbar2 {
@@ -65,6 +73,9 @@ display: none;
 .logosec {
 gap: 60px;
 font-style: var(--background-color1);
+}
+.logo{
+	font-size: 20px;
 }
 
 .searchbar input {

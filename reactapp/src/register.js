@@ -87,7 +87,7 @@ function ProfileUpdate() {
             {/* Since we're using a form, the button type should be "submit" */}
            <div class="buttoo"> <button type='submit'>Signup</button></div>
            
-         <div class="buutt"> <Link to="/login"> <button type='submit'>Login here</button></Link></div>
+         <div class="buutt"> <Link to="/login"> <button type='submit'>Login</button></Link></div>
 
           </form>
         </>

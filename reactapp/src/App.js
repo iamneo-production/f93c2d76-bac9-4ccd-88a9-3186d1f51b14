@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Login from './login';
+import Home from './home';
+import Dashboard from './dashboard';
+import Policy from './policy';
+import Claim from './claim';
+import Claimm from './claimm';
+import About from'./about';
+import Premium from'./premium';
+import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
+import Register from './register';
+import Payment from './payment';
+import Renewal from './renewal';
+import Postdetails from './postdetails';
+import Profile from './profile';
+import Accman from './accman';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <Router>
+    <Routes>
+      <Route path="/"element={<Home/>}/>
+      <Route path="/Login"element={<Login/>}/>
+      <Route path="/SignUp"element={<Register/>}/>
+      <Route path="/Dashboard"element={<Dashboard/>}/>
+      <Route path="/Policy"element={<Policy/>}/>
+      <Route path="/Claim"element={<Claim/>}/>
+      <Route path="/Claimm"element={<Claimm/>}/>
+      <Route path="/About"element={<About/>}/>
+      <Route path="/premium"element={<Premium/>}/>
+      <Route path="/payment"element={<Payment/>}/>
+      <Route path="/renewal"element={<Renewal/>}/>
+      <Route path="/postdetails"element={<Postdetails/>}/>
+      <Route path="/profile"element={<Profile/>}/>
+      <Route path="/accman"element={<Accman/>}/>
+    </Routes>
+  </Router>
+  )
 }
 
-export default App;
+export default App

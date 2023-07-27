@@ -1,40 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
 
+.background{
 
+    background-position: center;
+    background-size:cover ;
+    height: 100vh;
+    width: 100%;
+   
+}
 
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 13%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
 ::placeholder{
     opacity: 40%;
     color:#100f0f;
     
 }
-.container1{
+.container{
     position: absolute;
     
-    left: 35%;
+    left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 50%;
+    width: 35%;
     height: 600px;
-    margin-left:120px;
+    margin-left:-320px;
     margin-top: 5px;
-    background: linear-gradient(to bottom,#edf1f5  0%, #bad9f2 50%);
-    
-    background-size:100% ;
+    background: linear-gradient(to bottom,#89b9f7  0%, #bad9f2 50%);
+    background-position: center;
+    background-size:cover ;
     border-radius: 20px;
     overflow: hidden;
     opacity: 1.0;
 
 
 }
-.item10{
+.item{
     position: absolute;
-    top: 50;
-    left: 50;
+    top: 0;
+    left: 0;
     width: 58%;
     height: 100%;
     color: #0d0c0c;
     background: transparent;
-    padding-left: 500px;
+    padding-left: 500;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -106,24 +126,21 @@
 
 .login-section .form-box h2{
     text-align: center;
-    padding-left: 700px;
     font-size: 25px;
 }
 
 .form-box .input-box{
     
-    width: 140px;
+    width: 340px;
     height: 50px;
-    padding-left: 1200px;
     border-bottom: 2px solid#080707;
-    margin: 30px 30px;
-    position:relative;
+    margin: 30px 0;
+    position: relative;
 }
 .input-box input{
    
     width: 100%;
     height: 100%;
-    padding-left: 700px;
     background: transparent;
     border: none;
     outline: none;
@@ -137,7 +154,6 @@
     position: absolute;
     top: 13px;
     right: 0;
-    padding-left: 600px;
     font-size: 19px;
 }
 .input-box input:focus~ label,
@@ -218,4 +234,9 @@
     height: 190px;
     width: 300px;
     padding-left: 100px;
+} */
+.acc{
+    padding-right: 400px;
+
 }
+

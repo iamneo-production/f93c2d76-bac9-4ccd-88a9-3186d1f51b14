@@ -9,13 +9,13 @@ function renewal() {
        <h1>Select from the below listed options:</h1></div></center>
        <center><div class="radio1">
      
-      <h4>~Renew your policy</h4>
+      <h2>~Renew your policy</h2>
       <Link to="/payment"><button>CLICK HERE</button></Link>
     </div></center>
 
    <center><div class="radio2">
      
-     <h4>~Buy new policy</h4>
+     <h2>~Buy new policy</h2>
      <Link to="/policy"><button>CLICK HERE</button></Link>
     </div></center>
     <div class="mine5">

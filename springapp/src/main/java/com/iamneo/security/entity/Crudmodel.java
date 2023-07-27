@@ -25,13 +25,13 @@ public class Crudmodel
       @Id
       @GeneratedValue
       @Column(name="Vehicle_Id")
-      private int vehicle_id;
+      private int vehicleid;
       @Column(name="Name")
       private String name;
       @Column(name="Email")
       private String email;
       @Column(name="Vehicle_no")
-      private String vehicle_no;
+      private String vehicleno;
       @Column(name="Mobile")
       private long mobile;
       @Column(name="Password")

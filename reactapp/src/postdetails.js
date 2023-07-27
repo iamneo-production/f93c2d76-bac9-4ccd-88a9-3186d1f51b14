@@ -7,7 +7,7 @@ function ProfileUpdate() {
   
   const [name, setname] = useState('');
   const [email, setemail] = useState('');
-  const [vehicle_no, setvehicle_no] = useState('');
+  const [vehicleno, setvehicleno] = useState('');
   const [mobile, setmobile] = useState('');
   const [password, setpassword] = useState('');
   const [notification, setnotification] = useState('');
@@ -19,7 +19,7 @@ function ProfileUpdate() {
    
       name:name,
       email:email,
-      vehicle_no:vehicle_no,
+      vehicleno:vehicleno,
       mobile:mobile,
       password:password,
     };
@@ -38,9 +38,10 @@ console.log(response.data);
 
 setname('');
 setemail('');
-setvehicle_no('');
+setvehicleno('');
 setmobile('');
 setpassword('');
+window.alert("Data added sucessfully");
     }
     catch(error)
     {
@@ -49,16 +50,16 @@ setpassword('');
   };
 
   return (
-    <div>
-      <header className="header">
-      </header>
+    <div className='postform'>
+      
       <div className="background"></div>
       <div className="container1">
         <div className="item10">
         </div>
-        <div className="login-section">
-          <div className="form-box login">
+        <div className="man">
+          <center><div className="form-box login">
             <form onSubmit={handleSubmit}>
+              <br></br>
               <h2>Enter Your Details</h2>
               
               <div className="input-box">
@@ -71,7 +72,7 @@ setpassword('');
               </div>
               <div className="input-box">
                 <span className="icon"><i className='bx bxs-envelope'></i></span>
-                <input type="text" name="vehicle_no" placeholder='Vehicle number' value={vehicle_no} onChange={(e)=>setvehicle_no(e.target.value)} required />
+                <input type="text" name="vehicleno" placeholder='Vehicle number' value={vehicleno} onChange={(e)=>setvehicleno(e.target.value)} required />
               </div>
               <div className="input-box">
                 <span className="icon"><i className='bx bxs-lock-alt'></i></span>
@@ -84,7 +85,7 @@ setpassword('');
 
               <button type="submit" className="btn">Done</button>
             </form>
-          </div>
+          </div></center>
         </div>
       </div>
       </div>

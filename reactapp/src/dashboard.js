@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import './board.css';
 import './dash.css';
 import './policy';
@@ -6,18 +7,52 @@ import './home';
 import './claim';
 import './premium';
 import './postdetails';
-import {Link} from 'react-router-dom';
-function dashboard() {
+import './profile';
+import './accman';
+import { useDispatch, useSelector } from "react-redux";
+import { logout, selectUser } from "./redux/userSlice";
+import { Link } from 'react-router-dom';
+
+function Dashboard() {
+  const [data, setData] = useState(null);
+
+  // Define the API endpoint you want to call
+  const apiUrl = 'https://api.example.com/someendpoint'; // Replace with your API endpoint
+
+  useEffect(() => {
+    // Define an asynchronous function to fetch data using Axios
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(apiUrl);
+        setData(response.data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    // Call the fetchData function when the component mounts
+    fetchData();
+  }, []); // The empty dependency array ensures the effect runs only once on mount
+ 
+  const user= useSelector(selectUser);
+	const dispatch = useDispatch();
+	const handleLogout = (e) => {
+	  e.preventDefault();
+	  dispatch(logout());
+	};
   return (
     <div>
+      <div>
         <header>
     
             <div class="logosec">
-                <div class="logo">Safewheels</div>
-               
-            </div>
-            <a href="#" className='shy'>Contact-<b>1800 2666</b></a> 
-            
+                <div class="logo">Welcome {user.name}</div>
+
+                <div class="message">
+            <Link to="/profile"><button><b>Profile</b></button></Link>
+             <a href="#">Contact-<b>1800 2666</b></a> 
+             
+           </div> </div>
         </header>
         <div class="main-container">
             <div class="navcontainer">
@@ -72,6 +107,16 @@ function dashboard() {
                                 alt="report"></img>
                             <h3> Postdetails</h3>
                         </div></Link>
+
+                        <Link to="/accman">
+                        <div class="nav-option option5">
+                            <img src=
+    "https://media.geeksforgeeks.org/wp-content/uploads/20221210183323/10.png"
+                                class="nav-img"
+                                alt="blog"></img>
+                            <h3>Account Management</h3>
+                        </div></Link>
+
     <Link to="/">
                         <div class="nav-option logout">
                             <img src=
@@ -200,7 +245,8 @@ function dashboard() {
             </div>
         </div>
     </div>
-)
+    </div>
+  );
 }
 
-export default dashboard
+export default Dashboard;
